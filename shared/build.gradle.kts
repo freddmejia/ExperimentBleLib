@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
-    id("maven-publish")
 }
 
 group = "experimental.ble.lib"
@@ -14,7 +13,7 @@ kotlin {
                 jvmTarget = "1.8"
             }
         }
-        publishLibraryVariants("release","debug")
+        publishLibraryVariants("release", "debug")
     }
     
     listOf(
@@ -48,5 +47,4 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
-
 }
